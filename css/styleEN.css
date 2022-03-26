@@ -2473,6 +2473,46 @@ content {
   margin-bottom: 10px;
 }
 
+.suppliers {
+  padding: 50px 0;
+}
+
+.suppliers .supplier {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+.suppliers .supplier img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.suppliers .supplier h4 {
+  font-weight: bold;
+  font-size: large;
+  color: #1b9cd8;
+  margin-bottom: 10px;
+}
+
+.suppliers .supplier p {
+  font-size: small;
+  color: #777;
+}
+
+.suppliers .supplier:hover {
+  -webkit-box-shadow: 0px 10px 30px #00000030;
+          box-shadow: 0px 10px 30px #00000030;
+}
+
 .careers .subTitle {
   width: 900px;
   text-align: center;
