@@ -841,46 +841,8 @@ content {
         background-color: $white-color;
         text-align: center;
 
-        .product {
-            padding: 10px;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            height: 100%;
-
-            .productImg {
-                display: block;
-                margin-bottom: 16px;
-                border-radius: 10px;
-                height: 200px;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: contain;
-                }
-            }
-
-        }
-
-        .productTitle {
-            color: $secondColor;
-            font-weight: bold;
-            font-size: large;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .productDesc {
-            font-size: small;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .more {
-            text-transform: uppercase;
-            color: $secondColor;
-            text-decoration: underline;
-        }
+    
+        
 
 
         @media (max-width: 768px) {
@@ -888,6 +850,49 @@ content {
         }
     }
 }
+
+.product {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    height: 100%;
+    text-align: center;
+
+    .productImg {
+        display: block;
+        margin-bottom: 16px;
+        border-radius: 10px;
+        height: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .productTitle {
+        color: $secondColor;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .productDesc {
+        font-size: small;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .more {
+        text-transform: uppercase;
+        color: $thirdColor;
+        text-decoration: underline;
+        font-size: small;
+    }
+
+}
+
 
 .counter {
     position: relative;
@@ -2253,6 +2258,76 @@ content {
         }
     }
 }
+.productDetails {
+    .productInfo {
+        padding: 20px;
+        background-color: $white-color;
+        // box-shadow: $BigShadow;
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 50px;
+
+
+
+        @media (max-width:768px) {
+            padding: 10px;
+        }
+
+        .product-image {
+            margin-bottom: 30px;
+
+
+            @media (max-width:768px) {
+                margin-bottom: 10px;
+            }
+
+            img {
+                border-radius: 16px;
+                width: 100%;
+                object-fit: contain;
+                max-height: 400px;
+            }
+        }
+
+        .product-content {
+            padding: 20px;
+
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0;
+
+                li {
+                    margin-bottom: 20px;
+                    color: #808080;
+                }
+            }
+
+            .date {
+                color: $mainColor;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .productTitle {
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+                color: $mainColor;
+                margin-bottom: 20px;
+            }
+
+            .share {
+                p {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
 
 .careers {
     .subTitle {
@@ -3078,6 +3153,17 @@ content {
 .missionVision {
     padding: 30px 0;
 
+    .row{
+        border-radius: 16px;
+        margin: 40px 0;
+        @media (max-width:768px) {
+            background-color: #fff;
+            box-shadow: $BigShadow;
+            margin: 20px 0;
+
+            
+        }
+    }
     .aboutImg {
         height: 300px;
 
@@ -3092,7 +3178,7 @@ content {
     h4 {
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin: 10px;
         color: $secondColor;
     }
 
